@@ -1,0 +1,19 @@
+<h2>Log In</h2>
+
+
+{{!-- --}}
+<form action="/process-login" method="POST">
+  <label>
+    Email:
+    <input type="email" name="userEmail" placeholder="holdo@resitence.com" />
+  </label>
+  <label>
+    Password:
+    <input type="password" name="userPassword" placeholder="We won't tell..." />
+  </label>
+
+  {{!-- form tags ALWAYS need a submit button INSIDE the form --}}
+  <button>Log In</button>
+</form>
+
+{{!--why use POST method?: semantic security size --}}

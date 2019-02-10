@@ -1,0 +1,12 @@
+<h2>Fake YouTube Search</h2>
+
+
+{{!-- form tags ALWAYS need action"" and method="" attributes
+(they control which route you go to when you submit) --}}
+<form action="/results" method="GET">
+  {{!-- input tags ALWAYS need a name="" attribute --}}
+  <input type="search" name="search_query" placeholder="Seach for a video..." />
+
+  {{!-- form tags ALWAYS need a submit button INSIDE the form --}}
+  <button>Search</button>
+</form>
